@@ -10,7 +10,7 @@ for /f "tokens=*" %%A in ('git for-each-ref --sort=-creatordate --count=3 --form
 echo ================================
 
 set /p msg="Merge commit message: "
-set /p ver="New version: "
+set /p ver="Version name: "
 
 :: move to develop branch
 git checkout develop
