@@ -16,7 +16,7 @@ set /p ver="Version name: "
 git checkout develop
 
 :: Stage and commit version bump
-git tag %ver%
+git tag !ver!
 git add .
 git commit -m "!ver!"
 
