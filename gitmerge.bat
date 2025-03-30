@@ -1,5 +1,4 @@
 @echo off
-setlocal enabledelayedexpansion
 
 :: Show recent git tags
 echo ================================
@@ -10,22 +9,23 @@ for /f "tokens=*" %%A in ('git for-each-ref --sort=-creatordate --count=3 --form
 )
 echo ================================
 
-:: Get version input
+:: Get commit message and version input
 set /p ver="Version name: "
 
-:: Move to develop branch
+:: Move to develop branch (assumed as current working branch)
 git checkout develop
 
-:: Run npm version (auto-commit + tag)
-npm version !ver! --no-verify || goto :error
+:: Stage and commit version bump
+git add .
+git commit -m "%ver%"
 
-:: Move to main
+:: Move to main branch
 git checkout main
 
 :: Merge develop into main
-git merge develop -m "Merge version !ver! from develop"
+git merge develop -m "Merge version %ver% from develop"
 
-:: Push to main and push tag
+:: Push changes to main and tags
 git push origin main
 git push origin --tags
 
@@ -33,11 +33,5 @@ git push origin --tags
 git checkout develop
 
 echo ================================
-echo ✅ Merged version !ver! into main
+echo Merged version %ver% into main
 echo ================================
-goto :eof
-
-:error
-echo ❌ npm version failed or script was interrupted.
-pause
-exit /b
