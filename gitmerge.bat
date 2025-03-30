@@ -1,31 +1,44 @@
 @echo off
 setlocal enabledelayedexpansion
 
+:: Show recent git tags
 echo ================================
-echo Recent git tag:
+echo Recent git tags:
 echo -------------------------------
 for /f "tokens=*" %%A in ('git for-each-ref --sort=-creatordate --count=3 --format="%%(refname:short)" refs/tags') do (
     echo %%A
 )
 echo ================================
 
+:: Get commit message and version input
 set /p msg="Merge commit message: "
 set /p ver="Version name: "
 
-:: move to develop branch
+:: Move to develop branch
 git checkout develop
 git pull origin develop
 
-:: move to main branch
+:: Move to main branch
 git checkout main
 git pull origin main
 
-:: merge develop into main
+:: Merge develop into main
 git merge develop -m "%msg%"
 
-:: new version
+:: Commit merge result before running npm version
+git add .
+git commit -m "Merge develop into main: %msg%"
+
+:: Create new version tag (this modifies package.json and lock)
 npm version %ver%
 
-:: push
-git push origin main --follow-tags
+:: Commit version bump
+git add .
+git commit -m "Bump version to %ver%"
+
+:: Push main branch and tags
+git push origin main
+git push origin --tags
+
+:: Switch back to develop branch
 git checkout develop
