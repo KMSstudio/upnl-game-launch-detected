@@ -11,7 +11,6 @@ echo ================================
 
 :: Get commit message and version input
 set /p vercc="Version name: "
-
 :: Move to develop branch (assumed as current working branch)
 git checkout develop
 
