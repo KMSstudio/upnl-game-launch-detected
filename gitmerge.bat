@@ -1,5 +1,4 @@
 @echo off
-setlocal enabledelayedexpansion
 
 echo ================================
 echo Recent git tag:
