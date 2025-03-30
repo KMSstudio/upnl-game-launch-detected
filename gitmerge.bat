@@ -16,11 +16,7 @@ set /p ver="Version name: "
 git checkout develop
 
 :: Versioning (modifies package.json and package-lock.json)
-npm version %ver%
-
-:: Stage and commit version bump
-git add package.json package-lock.json
-git commit -m "%ver%"
+npm version %ver% 
 
 :: Move to main branch
 git checkout main
