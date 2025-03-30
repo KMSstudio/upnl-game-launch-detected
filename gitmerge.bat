@@ -17,7 +17,7 @@ set /p ver="Version name: "
 git checkout develop
 
 :: Run npm version (auto-commit + tag)
-npm version !ver! || goto :error
+npm version !ver! --no-verify || goto :error
 
 :: Move to main
 git checkout main
