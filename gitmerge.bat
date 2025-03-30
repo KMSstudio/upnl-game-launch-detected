@@ -17,7 +17,7 @@ set /p ver="Version name: "
 git checkout develop
 
 :: Run npm version (auto-commit + tag)
-npm version !ver!
+npm version !ver! || goto :error
 
 :: Move to main
 git checkout main
@@ -35,3 +35,9 @@ git checkout develop
 echo ================================
 echo ✅ Merged version !ver! into main
 echo ================================
+goto :eof
+
+:error
+echo ❌ npm version failed or script was interrupted.
+pause
+exit /b
