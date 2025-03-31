@@ -13,8 +13,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.777.0",
+    "firebase": "^11.5.0",
+    "firebase-admin": "^13.2.0",
+    "next": "^14.2.26",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
+    "react-dom": "^18"
   }
 }

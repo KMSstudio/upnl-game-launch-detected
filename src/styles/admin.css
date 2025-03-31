@@ -1,0 +1,41 @@
+/* @/app/styles/admin/project/admin.css */
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+}
+
+.admin-proj-sections {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 66px); /* assuming NavBar height is 66px */
+  overflow: hidden;
+}
+
+.admin-proj-sections > section {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #000;
+  color: white;
+}
+
+/* Hide Scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}
+body {
+  -ms-overflow-style: none;
+}

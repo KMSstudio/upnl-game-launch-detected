@@ -1,0 +1,249 @@
+.proj-register {
+  padding: 15px;
+  margin-top: 20px;
+  background: #181818;
+  border-radius: 8px;
+  color: white;
+}
+
+/* 입력 그룹 */
+.proj-register .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+/* 상단 이름/버전 입력 */
+.proj-register .title-edition-group {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.proj-register .title-edition-group input:nth-child(1) { flex: 4; }
+.proj-register .title-edition-group input:nth-child(2) { flex: 1; }
+
+.proj-register .input-group input,
+.proj-register .input-group select {
+  width: 100%;
+  min-width: 0;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: #333;
+  color: #bbb;
+}
+
+.proj-register .input-group input:focus,
+.proj-register .input-group select:focus {
+  outline: none;
+  border: none;
+}
+
+.proj-register .download-group {
+  display: flex;
+  gap: 10px;
+}
+
+.proj-register .download-group select {
+  flex: 1;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background: #333;
+  color: #bbb;
+  font-size: 14px;
+}
+
+.proj-register .download-group input {
+  flex: 4;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background: #333;
+  color: #bbb;
+  font-size: 14px;
+}
+
+.proj-register .download-group select:focus,
+.proj-register .download-group input:focus {
+  outline: none;
+}
+
+.proj-register .image-upload-group {
+  padding: 20px 0 10px;
+}
+
+.proj-register .image-upload-boxes {
+  display: flex;
+  gap: 10px;
+}
+
+.proj-register .upload-box {
+  flex: 1;
+  padding: 6px 10px;
+  background: #333;
+  color: #bbb;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background 0.2s ease;
+  text-align: center;
+}
+
+.proj-register .upload-box:hover {
+  background: #444;
+  color: #fff;
+}
+
+/* 태그 미리보기 */
+.proj-register .tag-preview {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.proj-register .main-tag {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  gap: 5px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.proj-register .tag {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  gap: 5px;
+  font-size: 12px;
+  color: #bbb;
+  border: 1px solid #bbb;
+  background: transparent;
+  cursor: pointer;
+}
+
+.proj-register .main-tag:hover,
+.proj-register .tag:hover {
+  background: #D62828 !important;
+  color: white !important;
+}
+.proj-register .tag:hover {
+  border-color: #D62828;
+}
+
+/* 태그 입력 */
+.proj-register .tag-input-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: stretch;
+}
+
+.proj-register .tag-input-group select,
+.proj-register .tag-input-group input {
+  flex: 1;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background: #333;
+  color: #bbb;
+  font-size: 14px;
+}
+
+.proj-register .tag-input-group select:focus,
+.proj-register .tag-input-group input:focus {
+  outline: none;
+  border: none;
+}
+
+/* 태그 추가 버튼 */
+.proj-register .tag-input-group button {
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #181818;
+  color: white;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.proj-register .tag-input-group button:hover {
+  background: #333;
+}
+
+/* 태그 아이콘 */
+.proj-register .tag-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* 버튼 그룹 */
+.proj-register .button-group {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* 등록 버튼 */
+.proj-register .register-button {
+  display: inline-block;
+  min-width: 20%;
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #bbb;
+  background: transparent;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.proj-register .register-button:hover {
+  color: #fff;
+  background: rgb(247, 143, 30);
+  border-color: rgb(247, 143, 30);
+}
+
+/* 삭제 버튼 */
+.proj-register .delete-button {
+  display: inline-block;
+  min-width: 20%;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #c00;
+  background: transparent;
+  border: 1px solid #c00;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.proj-register .delete-button:hover {
+  color: #f00;
+  background-color: #f88;
+  border: 1px solid #f00;
+}
+
+.proj-register .delete-button:disabled {
+  background-color: #ff9999;
+  cursor: not-allowed;
+}  

@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Rewarded",
+        "bgColor": "#FFD700",
+        "textColor": "#000000",
+        "icon": "/ico/tag/star.png"
+    },
+    {
+        "name": "NDM",
+        "bgColor": "#90EE90",
+        "textColor": "#000000",
+        "icon": "/ico/tag/out-of-print.png"
+    },
+    {
+        "name": "Release",
+        "bgColor": "#FFA500",
+        "textColor": "#000000",
+        "icon": "/ico/tag/school.png"
+    }
+]

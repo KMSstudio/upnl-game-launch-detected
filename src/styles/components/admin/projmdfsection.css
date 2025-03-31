@@ -1,0 +1,152 @@
+#proj-modify-section {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #000;
+    color: white;
+}
+
+#proj-modify-section h2 {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+#proj-modify-section .proj-input {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#proj-modify-section .proj-input input,
+#proj-modify-section .proj-input select {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#proj-modify-section .proj-select-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#proj-modify-section .proj-image-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#proj-modify-section .proj-image-upload label {
+    font-size: 14px;
+    color: #ccc;
+}
+
+#proj-modify-section .proj-image-upload input[type="file"] {
+    color: white;
+}
+
+#proj-modify-section .image-preview {
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 5px;
+    border: 1px solid #333;
+}
+
+#proj-modify-section .tag-preview {
+    margin-top: 15px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+#proj-modify-section .main-tag,
+#proj-modify-section .tag {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    background-color: #444;
+    cursor: pointer;
+}
+
+#proj-modify-section .main-tag {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#proj-modify-section .tag-icon {
+    width: 14px;
+    height: 14px;
+}
+
+#proj-modify-section .tag-input-group {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+#proj-modify-section .tag-input-group input,
+#proj-modify-section .tag-input-group select {
+    flex: 1;
+    padding: 6px;
+    font-size: 13px;
+    background-color: #222;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+#proj-modify-section .tag-input-group button {
+    padding: 6px 10px;
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#proj-modify-section .button-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#proj-modify-section .register-button,
+#proj-modify-section .delete-button {
+    padding: 10px 14px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#proj-modify-section .register-button:hover,
+#proj-modify-section .delete-button:hover {
+    background-color: #555;
+}
+
+#proj-modify-section .book-search {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #333;
+    color: #bbb;
+}
+
+#proj-modify-section .book-search:focus {
+    outline: none;
+    border: none;
+}  

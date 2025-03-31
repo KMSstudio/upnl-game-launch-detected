@@ -1,0 +1,10 @@
+/* @/app/styles/show/show.css */
+
+#proj-head-info {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    border-bottom: 1px solid #333;
+    background-color: #000;
+}
