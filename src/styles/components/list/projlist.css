@@ -1,0 +1,86 @@
+/* @/app/styles/components/list/projlist.css */
+
+#proj-list-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 검색 영역 전체 */
+#search-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* 왼쪽 검색 input 필드들 */
+#left-search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#left-search input {
+  padding: 6px 10px;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px;
+}
+
+#left-search input.disabled-input {
+  background: #111;
+  color: #777;
+}
+
+/* 오른쪽 태그 선택 영역 */
+#right-search {
+  flex: 1;
+}
+
+#right-search .tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* 태그 기본 스타일 */
+.tag,
+.main-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  background: #333;
+  color: #aaa;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+.main-tag img.tag-icon {
+  width: 14px;
+  height: 14px;
+}
+
+/* 선택된 태그 스타일 */
+.main-tag.selected,
+.tag.selected {
+  background: rgb(247, 143, 30);
+  color: white;
+}
+
+/* 프로젝트 리스트 */
+.proj-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}  

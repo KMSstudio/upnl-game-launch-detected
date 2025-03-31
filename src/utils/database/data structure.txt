@@ -1,0 +1,22 @@
+
+name: UPnL
+version: 2018.0.0,
+
+homepage-url: {hampage url path},
+
+os: window, mac, ...etc
+download-type: upnl | link | file
+download-url: url that pass to api
+
+image-sq: {public image path},
+image-fl: {public image path}
+
+tag: []
+core-tag: []
+
+keyword: []
+
+===??
+
+genre
+rewarded

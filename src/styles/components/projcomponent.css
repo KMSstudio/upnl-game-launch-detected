@@ -1,0 +1,85 @@
+/* @/app/styles/components/projcomponent.css */
+
+.proj-item {
+  background: #111;
+  padding: 12px;
+  border-radius: 8px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #333;
+  transition: background 0.2s ease;
+}
+
+.proj-item:hover {
+  background: #222;
+}
+
+/* 이미지 영역 */
+.proj-image {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.proj-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 텍스트 정보 */
+.proj-info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.proj-info h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.proj-info p {
+  font-size: 12px;
+  color: gray;
+  margin: 0;
+}
+
+/* 태그 영역 */
+.proj-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 6px;
+}
+
+/* 태그 스타일 */
+.main-tag,
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  background: #333;
+  color: #bbb;
+}
+
+.tag-icon {
+  width: 14px;
+  height: 14px;
+}

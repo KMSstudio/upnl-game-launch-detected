@@ -5,7 +5,7 @@ import Link from "next/link";
 // Components
 import NavBar from "@/app/components/NavBar";
 // Styles (CSS)
-import "@/style/index.css"
+import "@/styles/index.css"
 
 export default function HomePage() {
   return (

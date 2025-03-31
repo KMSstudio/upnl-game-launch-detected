@@ -1,0 +1,19 @@
+#proj-section {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #000;
+  color: white;
+}
+
+#proj-section h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#proj-section .proj-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
