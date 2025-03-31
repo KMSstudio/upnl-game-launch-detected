@@ -6,7 +6,7 @@ export default function ProjComponent({ proj, coreTags }) {
   return (
     <div className="proj-item">
       <div className="proj-image">
-        <img src={proj["image-sq"] || "/image/default.png"} alt="thumbnail" />
+        <img src={proj["image-sq"] || "/image/default/image-sq.png"} alt="thumbnail" />
       </div>
       <div className="proj-info">
         <h3>{proj.title}</h3>

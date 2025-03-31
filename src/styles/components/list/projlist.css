@@ -1,86 +1,111 @@
-/* @/app/styles/components/list/projlist.css */
-
-#proj-list-container {
-  padding: 20px;
+#book-list-container {
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
-/* 검색 영역 전체 */
+/* 검색 섹션 */
 #search-section {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 20px;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: transparent;
+
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
-/* 왼쪽 검색 input 필드들 */
+/* 왼쪽 입력 필드들 */
 #left-search {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
+  width: 45%;
 }
 
 #left-search input {
-  padding: 6px 10px;
-  background: #222;
-  color: white;
+  padding: 8px;
   border: none;
   border-radius: 4px;
+  box-sizing: border-box;
   font-size: 14px;
-  width: 200px;
+  background-color: #222;
+  color: white;
 }
 
+#left-search input:focus {
+  outline: none;
+  border: none;
+}
+
+#left-search input:disabled,
 #left-search input.disabled-input {
-  background: #111;
-  color: #777;
+  background-color: #555;
 }
 
-/* 오른쪽 태그 선택 영역 */
+/* 右側のタグ検索エリア */
 #right-search {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-height: 120px;
+  overflow: hidden;
 }
 
 #right-search .tag-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 10px;
+  overflow-y: auto;
 }
 
-/* 태그 기본 스타일 */
-.tag,
-.main-tag {
+#right-search .tag-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+#right-search .tag,
+#right-search .main-tag {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  padding: 4px 8px;
-  border-radius: 4px;
+  justify-content: center;
+
+  padding: 5px 10px;
   font-size: 12px;
-  background: #333;
-  color: #aaa;
+  border-radius: 4px;
   cursor: pointer;
-  user-select: none;
-  transition: background 0.2s ease;
 }
 
-.main-tag img.tag-icon {
-  width: 14px;
-  height: 14px;
+#right-search .tag {
+  color: #bbb;
+  border: 1px solid #bbb;
+  padding: 4px 9px;
+  background: transparent;
 }
 
-/* 선택된 태그 스타일 */
-.main-tag.selected,
-.tag.selected {
-  background: rgb(247, 143, 30);
-  color: white;
+#right-search .tag.selected {
+  border: 1.5px solid white;
+  padding: 3.5px 8.5px;
+  background-color: #222;
 }
 
-/* 프로젝트 리스트 */
+#right-search .main-tag.selected {
+  border: 2px solid white;
+  padding: 3px 8px;
+}
+
+#right-search .tag:hover { background-color: #777; }
+#right-search .main-tag:hover { filter: brightness(120%); }
+
+/* 프로젝트 리스트 영역 */
 .proj-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: flex-start;
-}  
+  justify-content: center;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}

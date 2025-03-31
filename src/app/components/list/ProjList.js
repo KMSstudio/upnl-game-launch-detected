@@ -17,7 +17,7 @@ function ProjSearchConsole({ projs, coreTags, setSearchResult }) {
   });
 
   const [selectedTags, setSelectedTags] = useState([]);
-  const allTags = useMemo(() => [...new Set(projs.flatMap(p => [...p.tag, ...p["core-tag"]]))], [projs]);
+  const allTags = useMemo(() => [...new Set(projs.flatMap(p => [...p.tag]))], [projs]);
 
   const executeSearch = (regexQuery, osQuery, tags) => {
     const filtered = projs.filter((proj) => {

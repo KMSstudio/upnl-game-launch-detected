@@ -1,20 +1,20 @@
 [
     {
-        "name": "주요서적",
+        "name": "Rewarded",
         "bgColor": "#FFD700",
         "textColor": "#000000",
-        "icon": "/image/ico/tag/star.png"
+        "icon": "/ico/tag/star.png"
     },
     {
-        "name": "절판된",
+        "name": "NDM",
         "bgColor": "#90EE90",
         "textColor": "#000000",
-        "icon": "/image/ico/tag/out-of-print.png"
+        "icon": "/ico/tag/out-of-print.png"
     },
     {
-        "name": "학교교재",
+        "name": "Release",
         "bgColor": "#FFA500",
         "textColor": "#000000",
-        "icon": "/image/ico/tag/school.png"
+        "icon": "/ico/tag/school.png"
     }
 ]

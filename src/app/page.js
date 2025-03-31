@@ -6,11 +6,13 @@ import Link from "next/link";
 import NavBar from "@/app/components/NavBar";
 // Styles (CSS)
 import "@/styles/index.css"
+// Constants
+import navData from "@/config/navConstant.json";
 
 export default function HomePage() {
   return (
     <div id="main-container">
-      <NavBar/>
+      <NavBar navs={navData.navs}/>
 
       <div id="content-container">
         {/* Left section */}
